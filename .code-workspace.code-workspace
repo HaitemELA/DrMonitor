@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "default~iris:USER",
+			"uri": "isfs://default~iris:user/"
+		}
+	],
+	"settings": {
+		"objectscript.showExplorer": false
+	}
+}
