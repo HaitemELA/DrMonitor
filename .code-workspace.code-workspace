@@ -1,11 +1,14 @@
 {
 	"folders": [
 		{
-			"name": "default~iris:USER",
-			"uri": "isfs://default~iris:user/"
+			"name": "localhost:MOHAMMED2023",
+			"uri": "isfs://localhost:mohammed2023/"
 		}
 	],
 	"settings": {
-		"objectscript.showExplorer": false
+		"objectscript.showExplorer": false,
+		"objectscript.conn": {
+			"active": false
+		}
 	}
 }
