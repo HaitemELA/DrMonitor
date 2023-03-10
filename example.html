@@ -88,8 +88,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "PASIN", "label": "PASIN", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HTTPOUT", "label": "HTTPOUT", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ENS.ALERT", "label": "ENS.ALERT", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "TOPUBLICHAPISERVER", "label": "TOPUBLICHAPISERVER", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HL7HTTP", "label": "HL7HTTP", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "NCAOPS", "label": "NCAOPS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "CONCEPTMAPS", "label": "CONCEPTMAPS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HL7HTTP_CUSTOM", "label": "HL7HTTP_CUSTOM", "shape": "dot", "size": 10}]);
-                  edges = new vis.DataSet([{"from": "PASIN", "to": "HTTPOUT", "width": 1}, {"from": "PASIN", "to": "ENS.ALERT", "width": 1}, {"from": "PASIN", "to": "TOPUBLICHAPISERVER", "width": 1}, {"from": "HL7HTTP", "to": "NCAOPS", "width": 1}, {"from": "HL7HTTP", "to": "CONCEPTMAPS", "width": 1}, {"from": "NCAOPS", "to": "HL7HTTP_CUSTOM", "width": 1}, {"from": "CONCEPTMAPS", "to": "HL7HTTP_CUSTOM", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "HL7FILESERVICE", "label": "HL7FILESERVICE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HL7FILEOPERATION", "label": "HL7FILEOPERATION", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HL7DATATESTFILEIN", "label": "HL7DATATESTFILEIN", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HL7DATATESTFILEOUT", "label": "HL7DATATESTFILEOUT", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "HL7FILESERVICE", "to": "HL7FILEOPERATION", "width": 1}, {"from": "HL7DATATESTFILEIN", "to": "HL7DATATESTFILEOUT", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
